@@ -728,9 +728,6 @@
     "AnVILBilling": [
         "plotly",
     ],
-    "AnVILPublish": [
-        "AnVIL",
-    ],
     "APAlyzer": [
         "GenomicRanges",
         "GenomicFeatures",
@@ -3029,7 +3026,6 @@
         "RCurl",
     ],
     "cBioPortalData": [
-        "AnVIL",
         "MultiAssayExperiment",
         "BiocFileCache",
         "GenomeInfoDb",
@@ -4076,7 +4072,6 @@
         "biovizBase",
         "Rsamtools",
         "GenomicAlignments",
-        "densityClust",
         "biocViews",
         "RANN",
         "RSQLite",
@@ -5419,7 +5414,6 @@
         "SummarizedExperiment",
         "sincell",
         "TSCAN",
-        "densityClust",
         "biocViews",
         "RANN",
         "fields",
@@ -15154,7 +15148,6 @@
         "R.oo",
     ],
     "monocle": [
-        "densityClust",
         "biocViews",
         "RANN",
         "RBGL",
@@ -17719,7 +17712,6 @@
         "RSpectra",
         "VIM",
         "RcppHNSW",
-        "densityClust",
         "biocViews",
         "RcppTOML",
         "leiden",
@@ -22540,9 +22532,6 @@
         "BiocFileCache",
         "dbplyr",
     ],
-    "seqCNA": [
-        "adehabitatLT",
-    ],
     "seqcombo": [
         "Biostrings",
         "cowplot",
@@ -26036,7 +26025,6 @@
         "RANN",
         "RSpectra",
         "monocle",
-        "densityClust",
         "biocViews",
         "RBGL",
         "RCurl",
@@ -26478,7 +26466,6 @@
     ],
     "waddR": [
         "arm",
-        "eva",
         "BiocFileCache",
         "SingleCellExperiment",
         "lme4",
