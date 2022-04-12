@@ -59,7 +59,6 @@
         "BiocManager",
         "GlobalOptions",
     ],
-    "acde": [ ],
     "ACE": [
         "QDNAseq",
         "GenomicRanges",
@@ -197,7 +196,6 @@
     "affy": [
         "BiocManager",
     ],
-    "affycomp": [ ],
     "AffyCompatible": [
         "RCurl",
         "Biostrings",
@@ -325,7 +323,6 @@
         "RCurl",
         "XVector",
     ],
-    "agilp": [ ],
     "AgiMicroRna": [
         "affy",
         "affycoretools",
@@ -761,7 +758,6 @@
         "MatrixGenerics",
         "DelayedArray",
     ],
-    "annotationTools": [ ],
     "annotatr": [
         "AnnotationDbi",
         "AnnotationHub",
@@ -812,7 +808,6 @@
         "KEGGREST",
         "Biostrings",
     ],
-    "antiProfiles": [ ],
     "AnVIL": [
         "BiocManager",
     ],
@@ -1018,7 +1013,6 @@
         "R.utils",
         "R.oo",
     ],
-    "arrayQuality": [ ],
     "arrayQualityMetrics": [
         "affy",
         "affyPLM",
@@ -1451,7 +1445,6 @@
         "XVector",
         "RCurl",
     ],
-    "banocc": [ ],
     "barcodetrackR": [
         "cowplot",
         "circlize",
@@ -1707,7 +1700,6 @@
         "RCurl",
         "Biostrings",
     ],
-    "beadarraySNP": [ ],
     "BEARscc": [
         "SingleCellExperiment",
         "SummarizedExperiment",
@@ -1969,7 +1961,6 @@
     "biobroom": [
         "broom",
     ],
-    "biobtreeR": [ ],
     "bioCancer": [
         "radiant.data",
         "cgdsr",
@@ -2798,7 +2789,6 @@
         "RSQLite",
         "KEGGREST",
     ],
-    "bridge": [ ],
     "BridgeDbR": [ ],
     "BSgenome": [
         "IRanges",
@@ -3144,7 +3134,6 @@
         "BiocIO",
         "restfulr",
     ],
-    "calm": [ ],
     "CAMERA": [
         "xcms",
         "RBGL",
@@ -3203,7 +3192,6 @@
         "GenomeInfoDb",
         "RCurl",
     ],
-    "cancerclass": [ ],
     "CancerInSilico": [ ],
     "CancerSubtypes": [
         "NMF",
@@ -3212,7 +3200,6 @@
         "BiocManager",
     ],
     "CAnD": [ ],
-    "caOmicsV": [ ],
     "Cardinal": [
         "BiocParallel",
         "EBImage",
@@ -3434,7 +3421,6 @@
         "GenomeInfoDb",
         "RCurl",
     ],
-    "ccrepe": [ ],
     "celaref": [
         "SummarizedExperiment",
         "MAST",
@@ -3642,7 +3628,6 @@
         "RBGL",
         "RCurl",
     ],
-    "cellscape": [ ],
     "CellScore": [ ],
     "CellTrails": [
         "SingleCellExperiment",
@@ -4313,7 +4298,6 @@
         "DelayedArray",
         "RCurl",
     ],
-    "chopsticks": [ ],
     "chromDraw": [
         "GenomicRanges",
         "IRanges",
@@ -4585,7 +4569,6 @@
         "MatrixGenerics",
         "DelayedArray",
     ],
-    "cisPath": [ ],
     "CiteFuse": [
         "SingleCellExperiment",
         "SummarizedExperiment",
@@ -4654,7 +4637,6 @@
         "GenomeInfoDb",
         "RCurl",
     ],
-    "clippda": [ ],
     "clipper": [
         "gRbase",
         "qpgraph",
@@ -4729,7 +4711,6 @@
     ],
     "Clomial": [ ],
     "Clonality": [ ],
-    "clonotypeR": [ ],
     "clst": [
         "ROC",
     ],
@@ -4753,7 +4734,6 @@
         "mzID",
         "BiocManager",
     ],
-    "clustComp": [ ],
     "clusterExperiment": [
         "SingleCellExperiment",
         "SummarizedExperiment",
@@ -4819,7 +4799,6 @@
         "RCurl",
     ],
     "ClusterSignificance": [ ],
-    "clusterStab": [ ],
     "clustifyr": [
         "cowplot",
         "fgsea",
@@ -5183,7 +5162,6 @@
         "MatrixGenerics",
         "DelayedArray",
     ],
-    "coGPS": [ ],
     "COHCAP": [
         "COHCAPanno",
     ],
@@ -5384,7 +5362,6 @@
         "Formula",
         "FNN",
     ],
-    "consensus": [ ],
     "ConsensusClusterPlus": [
         "ALL",
     ],
@@ -5546,7 +5523,6 @@
         "BiocFileCache",
         "dbplyr",
     ],
-    "copa": [ ],
     "copynumber": [
         "IRanges",
         "GenomicRanges",
@@ -6040,7 +6016,6 @@
         "GenomeInfoDb",
         "RCurl",
     ],
-    "ctsGE": [ ],
     "cummeRbund": [
         "RSQLite",
         "rtracklayer",
@@ -6405,7 +6380,6 @@
         "KEGGREST",
         "dbplyr",
     ],
-    "daMA": [ ],
     "DAMEfinder": [
         "GenomeInfoDb",
         "GenomicRanges",
@@ -6628,7 +6602,6 @@
     "dcGSA": [
         "BiocParallel",
     ],
-    "ddCt": [ ],
     "ddPCRclust": [
         "R.utils",
         "flowCore",
@@ -6656,7 +6629,6 @@
         "nloptr",
         "broom",
     ],
-    "dearseq": [ ],
     "debCAM": [
         "BiocParallel",
         "SummarizedExperiment",
@@ -7032,7 +7004,6 @@
         "KEGGREST",
         "Biostrings",
     ],
-    "deltaGseg": [ ],
     "DeMAND": [ ],
     "DeMixT": [
         "SummarizedExperiment",
@@ -7421,7 +7392,6 @@
         "rainbow",
         "hdrcde",
     ],
-    "diffGeneAnalysis": [ ],
     "diffHic": [
         "GenomicRanges",
         "InteractionSet",
@@ -7467,7 +7437,6 @@
         "MatrixGenerics",
         "DelayedArray",
     ],
-    "diffuStats": [ ],
     "diffUTR": [
         "SummarizedExperiment",
         "DEXSeq",
@@ -7547,7 +7516,6 @@
     "DirichletMultinomial": [
         "IRanges",
     ],
-    "discordant": [ ],
     "DiscoRhythm": [
         "MetaCycle",
         "ggExtra",
@@ -7615,7 +7583,6 @@
         "RCurl",
         "XVector",
     ],
-    "dks": [ ],
     "DMCFB": [
         "SummarizedExperiment",
         "BiocParallel",
@@ -7923,7 +7890,6 @@
         "MatrixGenerics",
         "DelayedArray",
     ],
-    "drawProteins": [ ],
     "DRIMSeq": [
         "GenomicRanges",
         "IRanges",
@@ -8054,8 +8020,6 @@
         "RCurl",
         "XVector",
     ],
-    "dupRadar": [ ],
-    "dyebias": [ ],
     "easier": [
         "progeny",
         "easierData",
@@ -8095,7 +8059,6 @@
         "nloptr",
         "Biostrings",
     ],
-    "easyreporting": [ ],
     "easyRNASeq": [
         "BiocFileCache",
         "BiocParallel",
@@ -8148,7 +8111,6 @@
     "EBSeqHMM": [
         "EBSeq",
     ],
-    "ecolitk": [ ],
     "EDASeq": [
         "ShortRead",
         "IRanges",
@@ -16508,7 +16470,6 @@
         "GenomeInfoDb",
         "RCurl",
     ],
-    "ModCon": [ ],
     "Modstrings": [
         "Biostrings",
         "GenomicRanges",
@@ -17282,7 +17243,6 @@
         "MatrixGenerics",
         "DelayedArray",
     ],
-    "MultiMed": [ ],
     "multiMiR": [
         "RCurl",
         "AnnotationDbi",
@@ -17720,7 +17680,6 @@
         "BiocIO",
         "restfulr",
     ],
-    "NanoStringDiff": [ ],
     "NanoStringNCTools": [
         "Biostrings",
         "IRanges",
@@ -17892,7 +17851,6 @@
         "RcppTOML",
         "RSpectra",
     ],
-    "NeighborNet": [ ],
     "nempi": [
         "mnem",
         "epiNEM",
@@ -17980,7 +17938,6 @@
         "XVector",
         "GenomeInfoDb",
     ],
-    "NetPathMiner": [ ],
     "netresponse": [
         "BiocStyle",
         "bookdown",
@@ -18143,7 +18100,6 @@
         "nloptr",
         "broom",
     ],
-    "NormqPCR": [ ],
     "normr": [
         "GenomeInfoDb",
         "GenomicRanges",
@@ -18178,7 +18134,6 @@
         "GenomeInfoDb",
         "RCurl",
     ],
-    "NTW": [ ],
     "nucleoSim": [
         "IRanges",
     ],
@@ -18218,7 +18173,6 @@
         "MatrixGenerics",
         "DelayedArray",
     ],
-    "NuPoP": [ ],
     "NxtIRFcore": [
         "NxtIRFdata",
         "AnnotationHub",
@@ -18258,7 +18212,6 @@
         "KEGGREST",
         "DT",
     ],
-    "OCplus": [ ],
     "ODER": [
         "BiocFileCache",
         "dasper",
@@ -18502,7 +18455,6 @@
         "RCurl",
         "XVector",
     ],
-    "Omixer": [ ],
     "oncomix": [
         "SummarizedExperiment",
         "MatrixGenerics",
@@ -18673,8 +18625,6 @@
         "RProtoBufLib",
         "FNN",
     ],
-    "OPWeight": [ ],
-    "OrderedList": [ ],
     "ORFhunteR": [
         "Biostrings",
         "rtracklayer",
@@ -18805,7 +18755,6 @@
         "lme4",
         "nloptr",
     ],
-    "OSAT": [ ],
     "Oscope": [
         "EBSeq",
         "BiocParallel",
@@ -18999,7 +18948,6 @@
         "affy",
         "BiocManager",
     ],
-    "PANR": [ ],
     "PanVizGenerator": [
         "FindMyFriends",
     ],
@@ -19025,11 +18973,9 @@
         "MatrixGenerics",
         "DelayedArray",
     ],
-    "Path2PPI": [ ],
     "pathifier": [
         "R.oo",
     ],
-    "PathNet": [ ],
     "PathoStat": [
         "DT",
         "phyloseq",
@@ -19430,7 +19376,6 @@
         "nloptr",
         "broom",
     ],
-    "PhenoGeneRanker": [ ],
     "phenopath": [
         "SummarizedExperiment",
         "MatrixGenerics",
@@ -19779,7 +19724,6 @@
         "lme4",
         "nloptr",
     ],
-    "PLPE": [ ],
     "plyranges": [
         "IRanges",
         "GenomicRanges",
@@ -20407,7 +20351,6 @@
         "GenomeInfoDb",
         "RCurl",
     ],
-    "PROPER": [ ],
     "PROPS": [
         "sva",
         "genefilter",
@@ -20573,7 +20516,6 @@
         "GenomeInfoDb",
         "RCurl",
     ],
-    "PSEA": [ ],
     "psichomics": [
         "AnnotationDbi",
         "AnnotationHub",
@@ -20676,7 +20618,6 @@
         "lme4",
         "nloptr",
     ],
-    "PubScore": [ ],
     "pulsedSilac": [
         "R.utils",
         "taRifx",
@@ -21076,7 +21017,6 @@
         "DelayedArray",
         "dbplyr",
     ],
-    "QuaternaryProd": [ ],
     "QUBIC": [
         "biclust",
     ],
@@ -21273,7 +21213,6 @@
         "restfulr",
         "DT",
     ],
-    "RbcBook1": [ ],
     "Rbec": [
         "dada2",
         "Biostrings",
@@ -21290,8 +21229,6 @@
         "MatrixGenerics",
         "DelayedArray",
     ],
-    "RBioinf": [ ],
-    "RBM": [ ],
     "Rbowtie2": [
         "Rsamtools",
         "GenomeInfoDb",
@@ -21349,7 +21286,6 @@
         "MatrixGenerics",
         "DelayedArray",
     ],
-    "RCASPAR": [ ],
     "rCGH": [
         "affy",
         "TxDb.Hsapiens.UCSC.hg18.knownGene",
@@ -21462,13 +21398,10 @@
     "RCyjs": [
         "BrowserViz",
     ],
-    "Rdisop": [ ],
-    "RDRToolbox": [ ],
     "ReactomeGraph4R": [
         "neo4r",
         "ReactomeContentService4R",
     ],
-    "ReactomeGSA": [ ],
     "ReactomePA": [
         "AnnotationDbi",
         "DOSE",
@@ -22021,7 +21954,6 @@
         "GenomeInfoDb",
         "RCurl",
     ],
-    "Rfastp": [ ],
     "rfPred": [
         "Rsamtools",
         "GenomicRanges",
@@ -22050,7 +21982,6 @@
         "MatrixGenerics",
         "DelayedArray",
     ],
-    "RGalaxy": [ ],
     "rGenomeTracks": [
         "imager",
         "reticulate",
@@ -22072,7 +22003,6 @@
         "GenomeInfoDb",
         "RCurl",
     ],
-    "Rgin": [ ],
     "RGMQL": [
         "RGMQLlib",
         "GenomicRanges",
@@ -22091,7 +22021,6 @@
         "MatrixGenerics",
         "DelayedArray",
     ],
-    "RGraph2js": [ ],
     "rGREAT": [
         "GenomicRanges",
         "IRanges",
@@ -22101,7 +22030,6 @@
         "XVector",
         "GlobalOptions",
     ],
-    "RGSEA": [ ],
     "rgsepd": [
         "DESeq2",
         "goseq",
@@ -22416,7 +22344,6 @@
         "XVector",
         "GenomeInfoDb",
     ],
-    "RIVER": [ ],
     "RJMCMCNucleosomes": [
         "IRanges",
         "GenomicRanges",
@@ -22435,8 +22362,6 @@
         "MatrixGenerics",
         "DelayedArray",
     ],
-    "RLassoCox": [ ],
-    "RLMM": [ ],
     "RLSeq": [
         "regioneR",
         "valr",
@@ -22480,7 +22405,6 @@
         "MatrixGenerics",
         "DelayedArray",
     ],
-    "Rmagpie": [ ],
     "RMassBank": [
         "mzR",
         "MSnbase",
@@ -22795,7 +22719,6 @@
         "RCurl",
         "XVector",
     ],
-    "RNASeqPower": [ ],
     "RNASeqR": [
         "pathview",
         "Rsamtools",
@@ -22965,7 +22888,6 @@
         "DelayedArray",
         "RCurl",
     ],
-    "ROSeq": [ ],
     "RPA": [
         "affy",
         "BiocStyle",
@@ -23065,7 +22987,6 @@
         "GenomeInfoDb",
         "RCurl",
     ],
-    "RRHO": [ ],
     "rrvgo": [
         "GOSemSim",
         "AnnotationDbi",
@@ -23114,7 +23035,6 @@
         "MatrixGenerics",
         "DelayedArray",
     ],
-    "RTCA": [ ],
     "RTCGA": [
         "survminer",
         "ggpubr",
@@ -23210,8 +23130,6 @@
         "nloptr",
         "broom",
     ],
-    "RTopper": [ ],
-    "Rtpca": [ ],
     "rtracklayer": [
         "GenomicRanges",
         "IRanges",
@@ -23380,7 +23298,6 @@
         "GenomeInfoDb",
         "RCurl",
     ],
-    "SANTA": [ ],
     "sarks": [
         "Biostrings",
         "IRanges",
@@ -23419,7 +23336,6 @@
         "XVector",
         "RCurl",
     ],
-    "SBMLR": [ ],
     "SC3": [
         "ROCR",
         "SummarizedExperiment",
@@ -23693,7 +23609,6 @@
         "KEGGREST",
         "Biostrings",
     ],
-    "SCBN": [ ],
     "scCB2": [
         "SingleCellExperiment",
         "SummarizedExperiment",
@@ -24620,7 +24535,6 @@
         "GenomeInfoDb",
         "RCurl",
     ],
-    "SEPIRA": [ ],
     "seq2pathway": [
         "WGCNA",
         "GSA",
@@ -25157,7 +25071,6 @@
         "GenomeInfoDb",
         "RCurl",
     ],
-    "SIMD": [ ],
     "SimFFPE": [
         "Biostrings",
         "GenomicRanges",
@@ -25555,11 +25468,9 @@
         "RCurl",
         "XVector",
     ],
-    "SLqPCR": [ ],
     "SMAD": [
         "RcppAlgos",
     ],
-    "SMAP": [ ],
     "SMITE": [
         "GenomicRanges",
         "Hmisc",
@@ -25594,7 +25505,6 @@
         "MatrixGenerics",
         "DelayedArray",
     ],
-    "SNAGEE": [ ],
     "snapCGH": [
         "GLAD",
         "tilingArray",
@@ -25728,7 +25638,6 @@
         "BiocFileCache",
         "dbplyr",
     ],
-    "SOMNiBUS": [ ],
     "SpacePAC": [
         "iPAC",
         "Biostrings",
@@ -26235,7 +26144,6 @@
         "dbplyr",
         "RSQLite",
     ],
-    "SQUADD": [ ],
     "sRACIPE": [
         "SummarizedExperiment",
         "umap",
@@ -26731,7 +26639,6 @@
         "GenomeInfoDb",
         "RCurl",
     ],
-    "SwathXtend": [ ],
     "switchde": [
         "SingleCellExperiment",
         "SummarizedExperiment",
@@ -26927,8 +26834,6 @@
         "lme4",
         "nloptr",
     ],
-    "TargetScore": [ ],
-    "TargetSearch": [ ],
     "TarSeqQC": [
         "GenomicRanges",
         "Rsamtools",
@@ -27698,7 +27603,6 @@
         "RCurl",
         "XVector",
     ],
-    "TrajectoryGeometry": [ ],
     "TrajectoryUtils": [
         "SingleCellExperiment",
         "SummarizedExperiment",
@@ -27854,7 +27758,6 @@
         "MatrixGenerics",
         "DelayedArray",
     ],
-    "Travel": [ ],
     "traviz": [
         "SingleCellExperiment",
         "slingshot",
@@ -27868,7 +27771,6 @@
         "RCurl",
         "XVector",
     ],
-    "TreeAndLeaf": [ ],
     "treekoR": [
         "ggtree",
         "SingleCellExperiment",
@@ -28284,7 +28186,6 @@
         "GenomicAlignments",
         "restfulr",
     ],
-    "TypeInfo": [ ],
     "Ularcirc": [
         "AnnotationHub",
         "AnnotationDbi",
@@ -28408,7 +28309,6 @@
         "MatrixGenerics",
         "DelayedArray",
     ],
-    "UNDO": [ ],
     "unifiedWMWqPCR": [
         "HTqPCR",
         "affy",
