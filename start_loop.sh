@@ -48,11 +48,13 @@ fi
 bash -c "while true; do bash dispatch_ready.sh -n $namespace -c $claim -b $built -f $failed -l $logs; done" &
 
 # Commit loop for github updates
-sleep 300 && bash commit.sh &
+bash commit.sh &
 
 # Loop until no more jobs in the namespace for >20 seconds
 while (( $(kubectl get jobs -n $namespace | grep 'build' | wc -l && sleep 10) + $(kubectl get jobs -n $namespace | grep 'build' | wc -l && sleep 10) + $(kubectl get jobs -n $namespace | grep 'build' | wc -l) > 0 )); do
-    echo "$(date) pods running: $(($(kubectl get pods -n $namespace | grep "build" | grep -w 'Running\|Init:1\|Init:2\|PodInitializing' | wc -l)))"
+    echo "$(date) pods running: $(($(kubectl get pods -n $namespace | grep "build" | grep -w 'Running\|Init:0\|Init:1\|PodInitializing\|NotReady' | wc -l)))"
+    echo "$(date) pod details: "
+    echo "$(kubectl get pods -n $namespace | awk '{print $3}' | sort | uniq -c)"
     echo "$(date) total jobs: $(($(kubectl get jobs -n $namespace | grep "build" | wc -l)))"
     sleep 5;
 done

@@ -30,7 +30,10 @@ fi
 
 if [ -z "$logs" ];
 then
-    cat $inputlist  | tr '\n' ' ' | xargs -i sh -c "job_name=\$(echo {} | tr -cd '[:alnum:]' | tr '[:upper:]' '[:lower:]')-build; kubectl delete -n $namespace job/\$job_name";
+    export UNIQUE=$(date '+%s');
+    cat $inputlist | xargs -i sh -c "job_name=\$(echo {} | tr -cd '[:alnum:]' | tr '[:upper:]' '[:lower:]')-build; echo \$job_name >> tmpclean$UNIQUE";
+    cat <(head -n -1 tmpclean$UNIQUE) <(tail -n 1 tmpclean$UNIQUE | tr -d '\n') | xargs -i kubectl delete jobs -n $namespace {};
+    rm tmpclean$UNIQUE;
     cat $inputlist >> $outputlist;
     rm $inputlist;
 else
@@ -38,3 +41,4 @@ else
     rm $inputlist;
 fi
 
+exit;

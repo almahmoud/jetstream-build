@@ -114,7 +114,10 @@ else
     sed -i ':a;N;$!ba;s/\[\n    \]/\[ \]/g' packages.json &&\
     sed -i "/    \"$(cat lists/dispatch$UNIQUE | sed 's/\./\\\./' | awk '{print $1"\\"}' | paste -sd'|' - | awk '{print "\\("$0")"}')\"\: \[ \]\(,\)\{0,1\}/d" packages.json &&\
     rm lists/dispatch$UNIQUE && rm lists/manifest$UNIQUE
-fi
+fi;
 
-wait;
-
+for job in `jobs -p`
+do
+echo $job
+    timeout 150 tail --pid=$job -f /dev/null
+done
