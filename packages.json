@@ -1750,7 +1750,6 @@
         "radiant.data",
         "cgdsr",
         "AnnotationDbi",
-        "geNetClassifier",
         "org.Hs.eg.db",
         "org.Bt.eg.db",
         "DOSE",
@@ -1968,7 +1967,6 @@
         "RCurl",
     ],
     "BioMM": [
-        "rms",
         "imager",
         "topGO",
         "GO.db",
@@ -2809,7 +2807,6 @@
     "canceR": [
         "cgdsr",
         "GSEABase",
-        "geNetClassifier",
         "RUnit",
         "phenoTest",
         "circlize",
@@ -2831,9 +2828,6 @@
         "XVector",
         "GenomeInfoDb",
         "RCurl",
-    ],
-    "CancerSubtypes": [
-        "NMF",
     ],
     "Cardinal": [
         "EBImage",
@@ -2914,7 +2908,6 @@
         "IDPmisc",
         "R.oo",
         "fds",
-        "rainbow",
     ],
     "Category": [
         "AnnotationDbi",
@@ -3191,7 +3184,6 @@
         "RCurl",
     ],
     "cellmigRation": [
-        "SpatialTools",
         "FactoMineR",
         "car",
         "pbkrtest",
@@ -3316,7 +3308,6 @@
         "IDPmisc",
         "R.oo",
         "fds",
-        "rainbow",
     ],
     "Cepo": [
         "GSEABase",
@@ -3600,7 +3591,6 @@
         "org.Hs.eg.db",
         "org.Mm.eg.db",
         "org.Rn.eg.db",
-        "rms",
         "rtracklayer",
         "RSQLite",
         "KEGGREST",
@@ -3917,7 +3907,6 @@
     "chromswitch": [
         "GenomicRanges",
         "IRanges",
-        "NMF",
         "rtracklayer",
         "GenomeInfoDb",
         "XVector",
@@ -4202,7 +4191,6 @@
     "clusterExperiment": [
         "SingleCellExperiment",
         "SummarizedExperiment",
-        "NMF",
         "BiocSingular",
         "DelayedArray",
         "HDF5Array",
@@ -4753,7 +4741,6 @@
         "flowClust",
         "flowMeans",
         "flowMerge",
-        "rms",
         "RCurl",
         "flowViz",
         "cytolib",
@@ -5513,7 +5500,6 @@
         "IDPmisc",
         "R.oo",
         "fds",
-        "rainbow",
     ],
     "CytoGLMM": [
         "cowplot",
@@ -5581,7 +5567,6 @@
         "IDPmisc",
         "R.oo",
         "fds",
-        "rainbow",
         "RCurl",
     ],
     "CytoTree": [
@@ -5639,7 +5624,6 @@
         "nloptr",
         "R.oo",
         "fds",
-        "rainbow",
     ],
     "dada2": [
         "Biostrings",
@@ -5899,7 +5883,6 @@
     "debCAM": [
         "SummarizedExperiment",
         "geometry",
-        "NMF",
         "RcppProgress",
         "MatrixGenerics",
         "GenomicRanges",
@@ -6577,7 +6560,6 @@
         "IDPmisc",
         "R.oo",
         "fds",
-        "rainbow",
     ],
     "diffHic": [
         "GenomicRanges",
@@ -7440,9 +7422,6 @@
         "R.oo",
     ],
     "EnMCB": [
-        "rms",
-        "mboost",
-        "survivalsvm",
         "IlluminaHumanMethylation450kanno.ilmn12.hg19",
         "minfi",
         "GenomicRanges",
@@ -8371,7 +8350,6 @@
         "seqPattern",
         "rtracklayer",
         "XVector",
-        "rainbow",
         "RCurl",
         "SummarizedExperiment",
         "restfulr",
@@ -8770,7 +8748,6 @@
         "R.oo",
         "fds",
         "nloptr",
-        "rainbow",
         "RCurl",
     ],
     "flowSpecs": [
@@ -8792,7 +8769,6 @@
         "DelayedArray",
         "MatrixGenerics",
         "IRanges",
-        "rainbow",
         "RCurl",
     ],
     "flowTime": [
@@ -8835,7 +8811,6 @@
         "DelayedArray",
         "MatrixGenerics",
         "IRanges",
-        "rainbow",
         "RCurl",
     ],
     "flowWorkspace": [
@@ -8926,7 +8901,6 @@
     "FRGEpistasis": [
         "fda",
         "fds",
-        "rainbow",
         "RCurl",
     ],
     "frma": [
@@ -8955,7 +8929,6 @@
         "SummarizedExperiment",
         "Biostrings",
         "XVector",
-        "rainbow",
         "MatrixGenerics",
         "DelayedArray",
     ],
@@ -10004,7 +9977,6 @@
     "GISPA": [
         "genefilter",
         "GSEABase",
-        "HH",
         "AnnotationDbi",
         "annotate",
         "IRanges",
@@ -10397,9 +10369,6 @@
     "gprege": [
         "gptk",
         "fields",
-    ],
-    "gpuMagic": [
-        "DescTools",
     ],
     "granulator": [
         "cowplot",
@@ -11252,7 +11221,6 @@
         "AnnotationForge",
         "dendextend",
         "egg",
-        "NMF",
         "biomaRt",
         "MatrixGenerics",
         "DelayedArray",
@@ -11350,7 +11318,6 @@
         "RSpectra",
         "umap",
         "dendextend",
-        "DescTools",
         "SingleCellExperiment",
         "SummarizedExperiment",
         "GenomicRanges",
@@ -11719,7 +11686,6 @@
     ],
     "inveRsion": [
         "haplo.stats",
-        "rms",
     ],
     "IONiseR": [
         "ShortRead",
@@ -12063,7 +12029,6 @@
         "fds",
         "GenomeInfoDb",
         "XVector",
-        "rainbow",
         "RCurl",
     ],
     "karyoploteR": [
@@ -13335,7 +13300,6 @@
         "R.oo",
         "fds",
         "nloptr",
-        "rainbow",
         "RCurl",
     ],
     "metagene": [
@@ -14413,7 +14377,6 @@
         "annotate",
         "GO.db",
         "AnnotationForge",
-        "mboost",
         "MatrixGenerics",
         "GenomicRanges",
         "IRanges",
@@ -14464,7 +14427,6 @@
     "miRSM": [
         "WGCNA",
         "MCL",
-        "NMF",
         "biclust",
         "iBBiG",
         "BicARE",
@@ -15631,7 +15593,6 @@
         "RCurl",
     ],
     "musicatk": [
-        "NMF",
         "SummarizedExperiment",
         "VariantAnnotation",
         "cowplot",
@@ -15690,7 +15651,6 @@
     ],
     "MutationalPatterns": [
         "GenomicRanges",
-        "NMF",
         "BSgenome",
         "VariantAnnotation",
         "IRanges",
@@ -15870,7 +15830,6 @@
     "NanoStringQCPro": [
         "AnnotationDbi",
         "org.Hs.eg.db",
-        "NMF",
         "IRanges",
         "RSQLite",
         "KEGGREST",
@@ -16121,7 +16080,6 @@
         "SingleCellExperiment",
         "DelayedArray",
         "HDF5Array",
-        "NMF",
         "BiocSingular",
         "zinbwave",
         "phylobase",
@@ -16634,7 +16592,6 @@
         "MatrixGenerics",
         "IRanges",
         "fds",
-        "rainbow",
         "RCurl",
     ],
     "openPrimeR": [
@@ -17096,7 +17053,6 @@
         "genefilter",
         "heatmaply",
         "plotly",
-        "NMF",
         "topGO",
         "GOstats",
         "GO.db",
@@ -17525,7 +17481,6 @@
     ],
     "Pigengene": [
         "BiocStyle",
-        "C50",
         "WGCNA",
         "GO.db",
         "clusterProfiler",
@@ -17578,7 +17533,6 @@
         "VariantAnnotation",
         "AnnotationFilter",
         "ProtGenerics",
-        "rainbow",
         "RCurl",
         "restfulr",
         "dbplyr",
@@ -18167,7 +18121,6 @@
     ],
     "projectR": [
         "CoGAPS",
-        "NMF",
         "ROCR",
         "ggalluvial",
         "SingleCellExperiment",
@@ -21546,7 +21499,6 @@
         "Rsamtools",
         "GenomeInfoDb",
         "BSgenome.Hsapiens.UCSC.hg19",
-        "DescTools",
         "BSgenome",
         "Biostrings",
         "XVector",
@@ -22431,7 +22383,6 @@
     ],
     "signeR": [
         "VariantAnnotation",
-        "NMF",
         "Biostrings",
         "GenomeInfoDb",
         "GenomicRanges",
@@ -23002,7 +22953,6 @@
     "SomaticSignatures": [
         "VariantAnnotation",
         "GenomicRanges",
-        "NMF",
         "IRanges",
         "GenomeInfoDb",
         "Biostrings",
@@ -23105,7 +23055,6 @@
         "MatrixGenerics",
     ],
     "SparseSignatures": [
-        "NMF",
         "Biostrings",
         "GenomicRanges",
         "IRanges",
@@ -25035,7 +24984,6 @@
         "IDPmisc",
         "R.oo",
         "fds",
-        "rainbow",
     ],
     "TreeSummarizedExperiment": [
         "SingleCellExperiment",
@@ -25427,7 +25375,6 @@
         "MatrixGenerics",
         "DelayedArray",
         "KEGGREST",
-        "rainbow",
         "restfulr",
     ],
     "uncoverappLib": [
@@ -26202,7 +26149,6 @@
         "XVector",
         "BSgenome",
         "RCurl",
-        "NMF",
         "ggbio",
         "MatrixGenerics",
         "SummarizedExperiment",
@@ -27057,11 +27003,9 @@
     ],
     "fda": [
         "fds",
-        "rainbow",
         "RCurl",
     ],
     "fds": [
-        "rainbow",
         "RCurl",
     ],
     "IRkernel": [
@@ -27471,9 +27415,6 @@
         "caret",
         "ModelMetrics",
         "recipes",
-    ],
-    "contrast": [
-        "rms",
     ],
     "airway": [
         "SummarizedExperiment",
@@ -27941,9 +27882,6 @@
         "MatrixGenerics",
         "DelayedArray",
     ],
-    "haplo.stats": [
-        "rms",
-    ],
     "pd.mapping50k.xba240": [
         "Biostrings",
         "RSQLite",
@@ -28184,9 +28122,6 @@
         "SummarizedExperiment",
         "MatrixGenerics",
         "DelayedArray",
-    ],
-    "InvariantCausalPrediction": [
-        "mboost",
     ],
     "miRBaseVersions.db": [
         "AnnotationDbi",
