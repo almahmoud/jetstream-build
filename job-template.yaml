@@ -46,8 +46,8 @@ spec:
             mountPath: "/home/rstudio"
         resources:
           requests:
-            memory: 1.2Gi
-            cpu: 600m
+            memory: 500Mi
+            cpu: 300m
           # limits:
           #   memory: 2Gi
           #   cpu: 2000m
@@ -107,4 +107,27 @@ spec:
             memory: 100Mi
             cpu: 100m
   backoffLimit: 4
+---
+apiVersion: "autoscaling.k8s.io/v1"
+kind: VerticalPodAutoscaler
+metadata:
+  name: PACKAGENAMELOWER-build
+  namespace: NAMESPACE
+spec:
+  targetRef:
+    apiVersion: "batch/v1"
+    kind: Job
+    name: PACKAGENAMELOWER-build
+  updatePolicy:
+    updateMode: "Auto"
+  resourcePolicy:
+    containerPolicies:
+      - containerName: 'build'
+        minAllowed:
+          cpu: 300m
+          memory: 500Mi
+        maxAllowed:
+          cpu: 3
+          memory: 3000Mi
+        controlledResources: ["cpu", "memory"]
 ---

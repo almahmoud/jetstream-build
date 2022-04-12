@@ -33,11 +33,12 @@ then
     export UNIQUE=$(date '+%s');
     cat $inputlist | xargs -i sh -c "job_name=\$(echo {} | tr -cd '[:alnum:]' | tr '[:upper:]' '[:lower:]')-build; echo \$job_name >> tmpclean$UNIQUE";
     cat <(head -n -1 tmpclean$UNIQUE) <(tail -n 1 tmpclean$UNIQUE | tr -d '\n') | xargs -i kubectl delete jobs -n $namespace {};
+    cat <(head -n -1 tmpclean$UNIQUE) <(tail -n 1 tmpclean$UNIQUE | tr -d '\n') | xargs -i kubectl delete verticalpodautoscalers -n $namespace {};
     rm tmpclean$UNIQUE;
     cat $inputlist >> $outputlist;
     rm $inputlist;
 else
-    cat $inputlist | xargs -i sh -c "job_name=\$(echo {} | tr -cd '[:alnum:]' | tr '[:upper:]' '[:lower:]')-build; kubectl get -n $namespace -o yaml job/\$job_name > $logs/{}/job.yaml && kubectl logs -n $namespace job/\$job_name -c build > $logs/{}/log && kubectl delete -n $namespace job/\$job_name && echo {} >> $outputlist";
+    cat $inputlist | xargs -i sh -c "job_name=\$(echo {} | tr -cd '[:alnum:]' | tr '[:upper:]' '[:lower:]')-build; kubectl get -n $namespace -o yaml job/\$job_name > $logs/{}/job.yaml && kubectl logs -n $namespace job/\$job_name -c build > $logs/{}/log && kubectl delete -n $namespace job/\$job_name && kubectl delete -n $namespace vpa/\${job_name}-vpa && echo {} >> $outputlist";
     rm $inputlist;
 fi
 
