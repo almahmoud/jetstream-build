@@ -1,0 +1,12 @@
+#!/usr/local/bin/RScript
+if (!require("BiocManager", quietly = TRUE))
+    install.packages("BiocManager", repos = "http://cran.us.r-project.org")
+outputfile <- commandArgs(trailingOnly = TRUE)
+if (!require("BiocKubeInstall", quietly = TRUE))
+	BiocManager::install("Bioconductor/BiocKubeInstall")
+library(BiocKubeInstall)
+deps <- BiocKubeInstall::pkg_dependencies("3.14")
+library(jsonlite)
+fileConn<-file(outputfile)
+writeLines(prettify(toJSON(deps)), fileConn)
+close(fileConn)

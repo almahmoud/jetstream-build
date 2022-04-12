@@ -1,0 +1,22 @@
+name: Reset packages and single run
+on:
+  workflow_dispatch: {}
+jobs:
+  packages:
+    runs-on: ubuntu-latest
+    container: bioconductor/bioc-redis:RELEASE_3_14
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          #token: ${{ secrets.PAT }}
+          persist-credentials: true
+      - shell: sh
+        run: |
+          Rscript deps_json.R packages.json
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add packages.json
+          git commit -m "Reset packages"
+          git push
+        env:
+          GITHUB_PAT: ${{ secrets.GIT_PAT }}
