@@ -4658,7 +4658,6 @@
         "ComplexHeatmap",
         "GetoptLong",
         "circlize",
-        "eulerr",
         "IRanges",
     ],
     "combi": [
@@ -11973,7 +11972,6 @@
         "AnnotationDbi",
         "org.Hs.eg.db",
         "org.Mm.eg.db",
-        "AdaptGauss",
         "Seurat",
         "SingleCellExperiment",
         "clusterProfiler",
@@ -22452,7 +22450,6 @@
         "RCurl",
     ],
     "seqsetvis": [
-        "eulerr",
         "GenomeInfoDb",
         "GenomicAlignments",
         "GenomicRanges",
@@ -22664,9 +22661,7 @@
         "mlr",
         "phyloseq",
         "LiblineaR",
-        "ParamHelpers",
         "PRROC",
-        "parallelMap",
         "Biostrings",
         "IRanges",
         "XVector",
@@ -24180,7 +24175,6 @@
     "survtype": [
         "SummarizedExperiment",
         "survminer",
-        "clustvarsel",
         "MatrixGenerics",
         "GenomicRanges",
         "IRanges",
@@ -24307,7 +24301,6 @@
     "synergyfinder": [
         "drc",
         "tidyverse",
-        "gstat",
         "SpatialExtremes",
         "plotly",
         "mice",
@@ -29043,10 +29036,6 @@
     "clustree": [
         "ggraph",
         "tidygraph",
-    ],
-    "mlr": [
-        "ParamHelpers",
-        "parallelMap",
     ],
     "celldex": [
         "SummarizedExperiment",
