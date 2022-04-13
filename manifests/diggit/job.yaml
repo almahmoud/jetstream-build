@@ -1,0 +1,163 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  annotations:
+    kubectl.kubernetes.io/last-applied-configuration: |
+      {"apiVersion":"batch/v1","kind":"Job","metadata":{"annotations":{},"name":"diggit-build","namespace":"js-build"},"spec":{"backoffLimit":4,"template":{"spec":{"affinity":{"nodeAffinity":{"requiredDuringSchedulingIgnoredDuringExecution":{"nodeSelectorTerms":[{"matchExpressions":[{"key":"kubernetes.io/hostname","operator":"In","values":["am-test-cm-5203b9","am-test-cm-5e7462","am-test-cm-6a618a","am-test-cm-a6a276","am-test-cm-d9658b"]}]}]}}},"containers":[{"args":["cp /mnt/libs/R/.rclone.conf ~/.rclone.conf \u0026\u0026 cd /home/rstudio \u0026\u0026 ls | grep \"diggit\" | xargs -i rclone copyto ./{} osn:bir190004-bucket01/packages/RELEASE_3_14/container/{} -v"],"command":["/bin/sh","-c"],"image":"rclone/rclone:latest","name":"rclone-copy","resources":{"requests":{"cpu":"100m","memory":"100Mi"}},"volumeMounts":[{"mountPath":"/mnt/libs/R","name":"libraries"},{"mountPath":"/tmp/local/lib/R/site-library","name":"tmplibrary"},{"mountPath":"/home/rstudio","name":"tmphome"}]},{"args":["cp /mnt/libs/R/.rclone.conf ~/.rclone.conf \u0026\u0026 cd /home/rstudio \u0026\u0026 ls | grep \"diggit\" | xargs -i rclone copyto ./{} taccjs:js-builder/packages/RELEASE_3_14/container/{} -v"],"command":["/bin/sh","-c"],"image":"rclone/rclone:latest","name":"iu-swift-copy","resources":{"requests":{"cpu":"100m","memory":"100Mi"}},"volumeMounts":[{"mountPath":"/mnt/libs/R","name":"libraries"},{"mountPath":"/tmp/local/lib/R/site-library","name":"tmplibrary"},{"mountPath":"/home/rstudio","name":"tmphome"}]}],"initContainers":[{"args":["su rstudio \u0026\u0026 cd /home/rstudio \u0026\u0026 Rscript -e 'p \u003c- .libPaths(); p \u003c- c(\"/tmp/local/lib/R/site-library\", p); .libPaths(p); if(BiocManager::install(\"diggit\", INSTALL_opts = \"--build\", update = FALSE, quiet = TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages())) q(status = 0) else q(status = 1)'"],"command":["/bin/bash","-c"],"env":[{"name":"R_LIBS_USER","value":"/mnt/libs/R"}],"image":"bioconductor/bioconductor_docker:RELEASE_3_14","name":"build","resources":{"requests":{"cpu":"300m","memory":"500Mi"}},"volumeMounts":[{"mountPath":"/mnt/libs/R","name":"libraries"},{"mountPath":"/tmp/local/lib/R/site-library","name":"tmplibrary"},{"mountPath":"/home/rstudio","name":"tmphome"}]},{"args":["cp -r /tmp/local/lib/R/site-library/diggit /mnt/libs/R/diggit \u0026\u0026 cd /home/rstudio \u0026\u0026 ls | grep \"diggit\" | xargs -i cp ./{} /mnt/libs/R/{}"],"command":["/bin/bash","-c"],"image":"bioconductor/bioconductor_docker:RELEASE_3_14","name":"nfs-copy","resources":{"requests":{"cpu":"100m","memory":"100Mi"}},"volumeMounts":[{"mountPath":"/mnt/libs/R","name":"libraries"},{"mountPath":"/tmp/local/lib/R/site-library","name":"tmplibrary"},{"mountPath":"/home/rstudio","name":"tmphome"}]}],"restartPolicy":"OnFailure","securityContext":{"fsGroup":1000,"runAsUser":0},"volumes":[{"name":"libraries","persistentVolumeClaim":{"claimName":"manual-js-build"}},{"emptyDir":{},"name":"tmplibrary"},{"emptyDir":{},"name":"tmphome"}]}}}}
+  creationTimestamp: "2022-04-12T23:08:54Z"
+  labels:
+    controller-uid: 4dbdaab3-847e-49e7-aa81-b7e17785190a
+    job-name: diggit-build
+  name: diggit-build
+  namespace: js-build
+  resourceVersion: "2633744"
+  selfLink: /apis/batch/v1/namespaces/js-build/jobs/diggit-build
+  uid: 4dbdaab3-847e-49e7-aa81-b7e17785190a
+spec:
+  backoffLimit: 4
+  completions: 1
+  parallelism: 1
+  selector:
+    matchLabels:
+      controller-uid: 4dbdaab3-847e-49e7-aa81-b7e17785190a
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        controller-uid: 4dbdaab3-847e-49e7-aa81-b7e17785190a
+        job-name: diggit-build
+    spec:
+      affinity:
+        nodeAffinity:
+          requiredDuringSchedulingIgnoredDuringExecution:
+            nodeSelectorTerms:
+            - matchExpressions:
+              - key: kubernetes.io/hostname
+                operator: In
+                values:
+                - am-test-cm-5203b9
+                - am-test-cm-5e7462
+                - am-test-cm-6a618a
+                - am-test-cm-a6a276
+                - am-test-cm-d9658b
+      containers:
+      - args:
+        - cp /mnt/libs/R/.rclone.conf ~/.rclone.conf && cd /home/rstudio && ls | grep
+          "diggit" | xargs -i rclone copyto ./{} osn:bir190004-bucket01/packages/RELEASE_3_14/container/{}
+          -v
+        command:
+        - /bin/sh
+        - -c
+        image: rclone/rclone:latest
+        imagePullPolicy: Always
+        name: rclone-copy
+        resources:
+          requests:
+            cpu: 100m
+            memory: 100Mi
+        terminationMessagePath: /dev/termination-log
+        terminationMessagePolicy: File
+        volumeMounts:
+        - mountPath: /mnt/libs/R
+          name: libraries
+        - mountPath: /tmp/local/lib/R/site-library
+          name: tmplibrary
+        - mountPath: /home/rstudio
+          name: tmphome
+      - args:
+        - cp /mnt/libs/R/.rclone.conf ~/.rclone.conf && cd /home/rstudio && ls | grep
+          "diggit" | xargs -i rclone copyto ./{} taccjs:js-builder/packages/RELEASE_3_14/container/{}
+          -v
+        command:
+        - /bin/sh
+        - -c
+        image: rclone/rclone:latest
+        imagePullPolicy: Always
+        name: iu-swift-copy
+        resources:
+          requests:
+            cpu: 100m
+            memory: 100Mi
+        terminationMessagePath: /dev/termination-log
+        terminationMessagePolicy: File
+        volumeMounts:
+        - mountPath: /mnt/libs/R
+          name: libraries
+        - mountPath: /tmp/local/lib/R/site-library
+          name: tmplibrary
+        - mountPath: /home/rstudio
+          name: tmphome
+      dnsPolicy: ClusterFirst
+      initContainers:
+      - args:
+        - su rstudio && cd /home/rstudio && Rscript -e 'p <- .libPaths(); p <- c("/tmp/local/lib/R/site-library",
+          p); .libPaths(p); if(BiocManager::install("diggit", INSTALL_opts = "--build",
+          update = FALSE, quiet = TRUE, force = TRUE, keep_outputs = TRUE) %in% rownames(installed.packages()))
+          q(status = 0) else q(status = 1)'
+        command:
+        - /bin/bash
+        - -c
+        env:
+        - name: R_LIBS_USER
+          value: /mnt/libs/R
+        image: bioconductor/bioconductor_docker:RELEASE_3_14
+        imagePullPolicy: IfNotPresent
+        name: build
+        resources:
+          requests:
+            cpu: 300m
+            memory: 500Mi
+        terminationMessagePath: /dev/termination-log
+        terminationMessagePolicy: File
+        volumeMounts:
+        - mountPath: /mnt/libs/R
+          name: libraries
+        - mountPath: /tmp/local/lib/R/site-library
+          name: tmplibrary
+        - mountPath: /home/rstudio
+          name: tmphome
+      - args:
+        - cp -r /tmp/local/lib/R/site-library/diggit /mnt/libs/R/diggit && cd /home/rstudio
+          && ls | grep "diggit" | xargs -i cp ./{} /mnt/libs/R/{}
+        command:
+        - /bin/bash
+        - -c
+        image: bioconductor/bioconductor_docker:RELEASE_3_14
+        imagePullPolicy: IfNotPresent
+        name: nfs-copy
+        resources:
+          requests:
+            cpu: 100m
+            memory: 100Mi
+        terminationMessagePath: /dev/termination-log
+        terminationMessagePolicy: File
+        volumeMounts:
+        - mountPath: /mnt/libs/R
+          name: libraries
+        - mountPath: /tmp/local/lib/R/site-library
+          name: tmplibrary
+        - mountPath: /home/rstudio
+          name: tmphome
+      restartPolicy: OnFailure
+      schedulerName: default-scheduler
+      securityContext:
+        fsGroup: 1000
+        runAsUser: 0
+      terminationGracePeriodSeconds: 30
+      volumes:
+      - name: libraries
+        persistentVolumeClaim:
+          claimName: manual-js-build
+      - emptyDir: {}
+        name: tmplibrary
+      - emptyDir: {}
+        name: tmphome
+status:
+  conditions:
+  - lastProbeTime: "2022-04-12T23:12:16Z"
+    lastTransitionTime: "2022-04-12T23:12:16Z"
+    message: Job has reached the specified backoff limit
+    reason: BackoffLimitExceeded
+    status: "True"
+    type: Failed
+  startTime: "2022-04-12T23:08:54Z"
